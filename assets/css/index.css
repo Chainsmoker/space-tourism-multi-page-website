@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Barlow Condensed', sans-serif;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grid__contenedor {
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    min-height: 100vh;
+}
+
+.seccion1 {
+    background-image: url("/assets/home/background-home-desktop.jpg");
+    text-transform: uppercase;
+}
+
+.navegacion {
+    position: fixed;
+    width: 100%;
+    margin-left: 7%;
+    z-index: 40;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.navegacion__logo {
+    flex-grow: 1;
+}
+
+.navegacion__linea {
+    background-color: rgba(88, 88, 88, 0.315);
+    height: 1px;
+    width: 20%;
+    flex-grow: 1;
+    transform: translateX(10%);
+    z-index: 20;
+}
+
+.navegacion__enlaces {
+    background-color: rgba(255, 255, 255, 0.103);
+    backdrop-filter: blur(10px);
+    flex-grow: 2;
+    display: flex;
+    gap: 50px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.navegacion__enlaces a {
+    color: #fff;
+}
+
+.seccion1__textos {
+    grid-column: 2 / 8;
+    grid-row: 2 / -2;
+    color: #fff;
+}
+
+.seccion1__textos h3 {
+    letter-spacing:2px;
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.seccion1__textos h1 {
+    font-size: 8rem;
+    font-weight: 400;
+    letter-spacing: 30px;
+}
+
+.seccion1__textos p {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-transform: capitalize;
+}
+
+.seccion1__explore {
+    grid-column: 11 /-2;
+    grid-row: 3 / -2;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.seccion1__explore h1 {
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 2rem;
+}
+
+/* Section two */
+.seccion2 {
+    background-image: url("/assets/destination/background-destination-desktop.jpg");
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.seccion2__imagen {
+    grid-column: 2 / 7;
+    grid-row: 2 / -1;
+    text-align: center;
+}
+
+.seccion2__imagen img {
+    max-width: 70%;
+    max-height: 70%;
+    margin-top: 50px;
+}
+
+.seccion2__imagen h1 {
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 4px;
+}
+
+.seccion2__imagen span {
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.452);
+}
+
+.seccion2__textos {
+    grid-column: 8 / -2;
+    grid-row: 2 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.seccion2__textos__nav span {
+    margin-right: 20px;
+    color: rgba(255, 255, 255, 0.452);
+    cursor: pointer;
+}
+
+.seccion2__textos__nav span:hover {
+    color: rgb(255, 255, 255);
+}
+
+.seccion2__textos__parrafos h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 10px;
+}
+
+.seccion2__textos__parrafos p {
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.seccion2__textos__detalles {
+    border-top: 1px solid rgba(255, 255, 255, 0.452);
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.seccion2__textos__detalles__item {
+    margin-top: 20px;
+}
+
+.seccion2__textos__detalles__item h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.452);
+}
+
+.seccion2__textos__detalles__item h1 {
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+}
+
+/* Section three */
+.seccion3 {
+    background-image: url("/assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    background-position-y: 50%;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.seccion3__textos {
+    grid-column: 2 / 7;
+    grid-row: 2 /-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.seccion3__textos h1 span {
+    color: rgba(255, 255, 255, 0.452);
+    margin-right: 20px;
+}
+
+.seccion3__textos h1 {
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.seccion3__textos__parrafos h2 {
+    color: rgba(255, 255, 255, 0.452);
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 2rem;
+}
+
+.seccion3__textos__parrafos h1 {
+    font-weight: 400;
+    letter-spacing: 7px;
+    font-size: 3rem;
+}
+
+.seccion3__textos__parrafos p {
+    text-transform: capitalize;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.452);
+    width: 70%;
+}
+
+.seccion3__botones  {
+    margin-top: -60px;
+}
+
+.seccion3__botones input {
+    appearance: none;
+    border: 2px solid #5e6172;
+    background-color: #5e6172;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+    margin-right: 20px;
+    transition: 0.2s all linear;
+}
+
+.seccion3__botones input:checked {
+    border: 7px solid #fff;
+    outline: unset !important;
+}
+
+.seccion3__imagen {
+    grid-column: 8 / -2;
+    grid-row: 2 /-1;
+    background-image: url("/assets/crew/image-anousheh-ansari.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Section four */
+.seccion4 {
+    background-image: url("/assets/technology/background-technology-desktop.jpg");
+    text-transform: uppercase;
+}
+
+.seccion4__textos {
+    grid-column: 2 / 7;
+    grid-row: 2 / -1;
+    color: #fff;
+}
+
+.seccion4__textos h1 span {
+    color: rgba(255, 255, 255, 0.452);
+    margin-right: 30px;
+}
+
+.seccion4__textos h1 {
+    letter-spacing: 5px;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+.seccion4__textos__parrafos {
+    display: flex;
+    gap: 50px;
+}
+
+.seccion4__textos__parrafos__item {
+    min-height: 300px;
+}
+
+.seccion4__textos__parrafos__item:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.seccion4__textos__parrafos__item:first-child h1 {
+    border: 1px solid #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+}
+
+.seccion4__textos__parrafos__item:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.seccion4__textos__parrafos__item:last-child h2 {
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.452);
+    font-size: 1rem;
+    letter-spacing: 4px;
+}
+
+.seccion4__textos__parrafos__item:last-child p {
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.452);
+}
+
+.seccion4__textos__parrafos__item:last-child h1 {
+    margin: 5px 0 20px;
+    font-size: 3rem;
+}
+
+.seccion4__imagen {
+    grid-column: 8 / -1;
+    grid-row: 2 / -1;
+}
+
+.seccion4__imagen img {
+    max-width: 100%;
+    max-height: 80%;
+    float: right;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#btnAbrir {
+    display: none;
+}
+
+@media (max-width: 825px){
+    body {
+        overflow: scroll;
+    }
+
+    .navegacion__linea {
+        display: none;
+    }
+
+    .seccion1 {
+        background-image: url("/assets/home/background-home-tablet.jpg");
+    }
+
+    .seccion1__textos {
+        grid-column: 2 / -2;
+        grid-row: 2 / 4;
+        text-align: center;
+    }
+
+    .seccion1__textos h1 {
+        letter-spacing: 2px;
+        font-size: 4.5em;
+    }
+
+    .seccion1__explore {
+        grid-column: 2 / -2;
+        grid-row: 4 / -1;
+        margin: 40px auto;
+    }
+
+    .seccion2 {
+        background-image: url("/assets/destination/background-destination-tablet.jpg");
+        background-size: cover;
+    }
+
+    .seccion2__imagen {
+        grid-column: 2 / -2;
+        grid-row: 2 / 4;
+    }
+    
+    .seccion2__textos {
+        grid-column: 2 / -2;
+        grid-row: 3 / -1;
+        text-align: center;
+    }
+
+    .seccion2__textos__detalles {
+        justify-content: center;
+    }
+
+    .seccion3 {
+        background-image: url("/assets/crew/background-crew-tablet.jpg");
+    }
+
+    .seccion3__textos {
+        grid-column: 2 / -2;
+        grid-row: 2 / 4;
+        text-align: center;
+    }
+
+    .seccion3__textos__parrafos p{
+        width: 100%;
+    }
+
+    .seccion3__botones {
+        margin: 30px 0;
+    }
+
+    .seccion3__imagen {
+        grid-column: 2 / -2;
+        grid-row: 4 / -1;
+    }
+
+    .seccion4 {
+        background-image: url("/assets/technology/background-technology-tablet.jpg");
+        background-size: cover;
+    }
+
+    .seccion4__imagen {
+        grid-column: 2 / -2;
+        grid-row: 2 / 5;
+    }
+
+    .seccion4__imagen img {
+        float: none;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-top-right-radius: 5px;
+    }
+
+    .seccion4__textos {
+        grid-column: 2 / -2;
+        grid-row: 4 / -1;
+        background-color: #0B0E17;
+        z-index: 20;
+        text-align: center;
+    }
+
+    .seccion4__textos h1 {
+        margin-top: 50px;
+    }
+
+    .seccion4__textos__parrafos {
+        flex-direction: column;
+    }
+
+    .seccion4__textos__parrafos__item {
+        min-height: 100px;
+    }
+
+    .seccion4__textos__parrafos__item:first-child {
+        flex-direction: row;
+        margin-top: 20px;
+        height: auto;
+    }
+}
+
+@media (max-width: 500px) {
+    #btnAbrir {
+        display: block;
+        position: fixed;
+        top: 6%;
+        right: 7%;
+        z-index: 40;
+    }
+
+    .navegacion__enlaces {
+        position: fixed;
+        height: 250px;
+        width: 250px;
+        top: 20%;
+        right: 7%;
+        z-index: 30;
+        flex-direction: column;
+        background-color: #202020;
+        display: none;
+    }
+}
+
+.dpflex {
+    display: flex;
+}
+
+.slider2__activo {
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+}
+
+.slider4__activo {
+    background-color: #fff;
+    color: #0B0E17;
+}
