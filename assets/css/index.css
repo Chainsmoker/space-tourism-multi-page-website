@@ -111,7 +111,7 @@ a {
 
 /* Section two */
 .seccion2 {
-    background-image: url("/destination/background-destination-desktop.jpg");
+    background-image: url("../destination/background-destination-desktop.jpg");
     color: #fff;
     text-transform: uppercase;
 }
@@ -195,7 +195,7 @@ a {
 
 /* Section three */
 .seccion3 {
-    background-image: url("crew/background-crew-desktop.jpg");
+    background-image: url("../crew/background-crew-desktop.jpg");
     background-size: cover;
     background-position-y: 50%;
     color: #fff;
@@ -264,7 +264,7 @@ a {
 .seccion3__imagen {
     grid-column: 8 / -2;
     grid-row: 2 /-1;
-    background-image: url("./crew/image-anousheh-ansari.png");
+    background-image: url("../crew/image-anousheh-ansari.png");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -272,7 +272,7 @@ a {
 
 /* Section four */
 .seccion4 {
-    background-image: url("/technology/background-technology-desktop.jpg");
+    background-image: url("../technology/background-technology-desktop.jpg");
     text-transform: uppercase;
 }
 
@@ -367,7 +367,7 @@ a {
     }
 
     .seccion1 {
-        background-image: url("/assets/home/background-home-tablet.jpg");
+        background-image: url("../home/background-home-tablet.jpg");
     }
 
     .seccion1__textos {
@@ -388,7 +388,7 @@ a {
     }
 
     .seccion2 {
-        background-image: url("/assets/destination/background-destination-tablet.jpg");
+        background-image: url("../destination/background-destination-tablet.jpg");
         background-size: cover;
     }
 
@@ -408,7 +408,7 @@ a {
     }
 
     .seccion3 {
-        background-image: url("/assets/crew/background-crew-tablet.jpg");
+        background-image: url("../crew/background-crew-tablet.jpg");
     }
 
     .seccion3__textos {
@@ -431,7 +431,7 @@ a {
     }
 
     .seccion4 {
-        background-image: url("/assets/technology/background-technology-tablet.jpg");
+        background-image: url("../technology/background-technology-tablet.jpg");
         background-size: cover;
     }
 
