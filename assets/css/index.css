@@ -23,7 +23,7 @@ a {
 }
 
 .seccion1 {
-    background-image: url("../assets/home/background-home-desktop.jpg");
+    background-image: url("./assets/home/background-home-desktop.jpg");
     text-transform: uppercase;
 }
 
